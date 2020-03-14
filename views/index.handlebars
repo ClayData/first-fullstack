@@ -1,0 +1,15 @@
+<h1>Movie List</h1>
+
+<ul>
+    {{#each movies}}
+    <li>
+        <p>
+            {{this.id}}. {{this.movie}}
+            <br>
+            <button data-movieid="{{this.id}}" class="delmovie">Delete Movie!</button>
+        </p>
+    </li>
+    {{/each}}
+</ul>
+
+<h2>Insert a Movie</h2>
