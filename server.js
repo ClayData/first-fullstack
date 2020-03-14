@@ -20,7 +20,7 @@ var connection = mysql.createConnection({
   port: 3306,
   user: "root",
   password: "",
-  database: "movieplannerDB"
+  database: "moviePlannerDB"
 });
 
 connection.connect(function(err) {
@@ -32,3 +32,19 @@ connection.connect(function(err) {
   console.log("connected as id " + connection.threadId);
 });
 
+
+app.get("/", function(req, res){
+    
+});
+
+app.post("/movies", function(req, res){
+
+});
+
+app.put("/movies/:id", function(req, res){
+    
+});
+
+app.delete("/movies/:id", function(req, res){
+    
+});
